@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yusuf's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="css/bootstrap.min.css" >
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+	<!-- font awesome -->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div id="leftMenu">
+        <a href="javscript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+        <div class="mainNav">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="portofolio.html">portfolio</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </div>
+    <span onclick="openBtn()">&#9776; Menu</span>
+    <div class="portfolio" id="portfolio">
+        <div class="box">
+            <h2>Portfolio</h2>
+            <p>I completed my bachelor’s degree majoring Geography at Universitas Indonesia in July 2022. As a fresh graduate with that background, during my studies, I was once a freelance surveyor merchant in a company that works in the field of technology. I surveyed 120 merchant points to validate by plotting points using GPS. 
+
+				I also participated in the mapping of benthic habitats on Derawan and Maratua islands in collaboration with the Ministry of Marine Affairs and Fisheries (KKP) and the National Institute of Aeronautics and Space (LAPAN) which lasted for approximately 10 days.</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function openBtn()
+        {
+            document.getElementById("leftMenu").style.width = "250px";
+        }
+
+        function closeBtn()
+        {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+    </script>
+</body>
+</html>

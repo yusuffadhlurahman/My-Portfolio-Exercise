@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yusuf's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="css/bootstrap.min.css" >
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+	<!-- font awesome -->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="leftMenu">
+        <a href="javscript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+        <div class="mainNav">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="portofolio.html">portfolio</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </div>
+    <span onclick="openBtn()">&#9776; Menu</span>
+    <div class="services" id="services">
+        <div class="box">
+            <h2>Our Services</h2>
+            <p>I could operate GIS applications such as ArcGis Pro and GEE, also proficient in using Microsoft Office, and have good time management. </p>
+        </div>
+    </div>
+    <!-- Skill --> 
+      <section id="Services" class="movies section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-left pb-2">
+                        <h2><i class="fa-sharp fa-solid fa-database"></i> Services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                          <div class="img-area mb-4">
+                              <img src="img/analis.jpg" class="img-fluid" alt="">
+                          </div>
+                            <h3 class="card-title">Spatial Analysis</h3>
+                            <p class="lead">Examine any locations, attributes, and relationships of features in spatial data through overlay and other analytical techniques.</p>
+                            <a href="" class="btn btn-warning">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                          <div class="img-area mb-4">
+                              <img src="img/surveyor.jpg" class="img-fluid" alt="">
+                          </div>
+                            <h3 class="card-title">Surveyor</h3>
+                            <p class="lead">Helping you to survey any of your problems and create data analysis.</p>
+                            <a href=""class="btn btn-warning">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                          <div class="img-area mb-4">
+                              <img src="img/dem.jpg" class="img-fluid" alt="">
+                          </div>
+                            <h3 class="card-title">Spatial Modelling</h3>
+                            <p class="lead">Create and analyst the process conducted in conjunction with a geographical information system (GIS)</p>
+                            <a href="" class="btn btn-warning">learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Movies ends -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function openBtn()
+        {
+            document.getElementById("leftMenu").style.width = "250px";
+        }
+
+        function closeBtn()
+        {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+    </script>
+</body>
+</html>

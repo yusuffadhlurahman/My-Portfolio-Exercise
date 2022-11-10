@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yusuf's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="css/bootstrap.min.css" >
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+	<!-- font awesome -->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="leftMenu">
+        <a href="javscript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+        <div class="mainNav">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="portofolio.html">portfolio</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </div>
+    <span onclick="openBtn()">&#9776; Menu</span>
+    <div class="about" id="about">
+        <div class="box">
+            <h2>About Me</h2>
+            <p>A curious and hard work person who is major in Geographic Information System (GIS) and remote sensing.  As a fresh graduated Geography student, I am looking for experience and to learn something new about anything. I have a good ability to work with team or individual. Skilled in spatial analysis using ArcGIS and ENVI software and also proficient in Microsoft Office.</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function openBtn()
+        {
+            document.getElementById("leftMenu").style.width = "250px";
+        }
+
+        function closeBtn()
+        {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+    </script>
+</body>
+</html>
